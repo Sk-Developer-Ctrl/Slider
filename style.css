@@ -1,0 +1,80 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family:  'Lucida Sans', Arial, sans-serif;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background:#370963;
+
+}
+
+.slider-wrapper{
+  overflow: hidden;
+  max-width: 1300px;
+  margin: 0 70px 70px ;
+}
+.card-list .card-item{
+  color: white;
+  user-select: none;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 6px;
+  border: 2px solid white;
+  background: #ffffff79;
+}
+.card-list .card-item .user-image{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid white;
+  padding: 5px;
+  margin-bottom: 32px;
+}
+
+.card-list .card-item .user-name{
+  font-size: 24px;
+  font-weight: 600;
+}
+.card-list .card-item .review-text{
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  margin: 18px 0;
+}
+.card-list .card-item .review-rating img{
+  cursor: pointer;
+}
+
+.slider-wrapper .swiper-pagination-bullet{
+  background: white;
+  width: 15px;
+  height: 15px;
+}
+
+.slider-wrapper .swiper-slider-button{
+  color: white;
+  margin: 0 8px;
+  transition: 0.3s  ease ;
+}
+.slider-wrapper .swiper-slider-button:hover{
+  color: rgba(208, 208, 226, 0.815);
+}
+
+@media screen and (max-width: 786px) {
+  .slider-wrapper{
+    margin: 0 10px 40px;
+  }
+  .slider-wrapper .swiper-slider-button{
+    display: none;
+  }
+  
+}
