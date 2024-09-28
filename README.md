@@ -1,0 +1,2 @@
+# Slider
+Responsive Slider
